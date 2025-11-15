@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "soundShelterControl",
+  "version": "1.0",
+
+  "description": "Adds keyboard controls to music player",
+
+  "icons": {
+    "48": "icons/soundShelter.svg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.soundshelter.net/*"],
+      "js": ["ssc.js"]
+    }
+  ]
+}
